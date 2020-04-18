@@ -6,13 +6,8 @@
     @else
         <div class="center jumbotron">
             <div class="text-center">
-                <h1>Welcome to the Microposts</h1>
-                {!! link_to_route('signup.get', 'Sign up now!', [], ['class' => 'btn btn-lg btn-primary']) !!}
-            </div>
-        </div>
-    @endif
-
-    <div class="row">
+                <h1>Daily-Report</h1>
+                    <div class="row">
         <div class="col-sm-6 offset-sm-3">
 
             {!! Form::open(['route' => 'login.post']) !!}
@@ -26,10 +21,14 @@
                     {!! Form::password('password', ['class' => 'form-control']) !!}
                 </div>
 
-                {!! Form::submit('Log in', ['class' => 'btn btn-primary btn-block']) !!}
+                {!! Form::submit('ログイン', ['class' => 'btn btn-primary btn-block']) !!}
             {!! Form::close() !!}
 
-            <p class="mt-2">New user? {!! link_to_route('signup.get', 'Sign up now!') !!}</p>
         </div>
     </div>
+            </div>
+        </div>
+    @endif
+
+
 @endsection
