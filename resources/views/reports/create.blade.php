@@ -20,8 +20,8 @@
                         </tr>
                         @for ($i = 0; $i < 5; $i++)
                         <tr>
-                            <td>{{Form::select('type[]', $typeOptions, ['class' => 'form-control'])}}</td>
-                            <td>{!! Form::text('amount[]', null, ['class' => 'form-control']) !!}</td>
+                            <td>{{Form::select('new_type[]', $typeOptions, ['class' => 'form-control'])}}</td>
+                            <td>{!! Form::text('new_amount[]', null, ['class' => 'form-control']) !!}</td>
                         </td>
                         @endfor
                         

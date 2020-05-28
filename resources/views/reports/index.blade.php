@@ -21,7 +21,7 @@
                 @endforeach
             </tbody>
         </table>
-         {!! link_to_route('reports.create', '新規の投稿', [], ['class' => 'btn btn-primary']) !!}
+         {!! link_to_route('reports.create', '新規日報', [], ['class' => 'btn btn-primary']) !!}
         @else
         <div class="center jumbotron">
             <div class="text-center">
