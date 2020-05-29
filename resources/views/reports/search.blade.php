@@ -26,6 +26,13 @@
     @if($reports->count())
      
     <table class="table table-bordered" border="1">
+        @foreach($totals as $total)
+        <tr>
+            <td>{{ $total->type }}</td>
+            <td>{{ $total->total }}</td>
+        </td>
+        @endforeach
+
         <tr>
             <th>日付</th>
             <th>日報内容</th>
