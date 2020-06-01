@@ -17,7 +17,7 @@
         <tr>
             <td>{{ $reportType->type }}</td>
             <td>{{ $reportType->amount }}</td>
-        </td>
+        </tr>
         @endforeach
         
         <tr>

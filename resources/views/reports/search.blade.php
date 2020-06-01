@@ -24,15 +24,21 @@
     {!! Form::close() !!}
 
     @if($reports->count())
-     
+        @if($isSearch)
+            <table class="table table-bordered" border="1">
+                <tr>
+                @foreach($totals as $total)
+                    <th>{{ $total->type }}</td>
+                @endforeach
+                </tr>
+                <tr>
+                @foreach($totals as $total)
+                    <td>{{ $total->total }}</td>
+                @endforeach
+                </tr>
+            </table>  
+        @endif
     <table class="table table-bordered" border="1">
-        @foreach($totals as $total)
-        <tr>
-            <td>{{ $total->type }}</td>
-            <td>{{ $total->total }}</td>
-        </td>
-        @endforeach
-
         <tr>
             <th>日付</th>
             <th>日報内容</th>
